@@ -96,4 +96,4 @@ const CourseSchema = new Schema(
   { timestamps: true, versionKey: false },
 );
 
-export const Course = model("Event", eventSchema);
+export const Course = model("Course", CourseSchema);
