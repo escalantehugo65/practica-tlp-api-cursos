@@ -35,10 +35,6 @@ const profileSchema = new Schema(
   { _id: false },
 );
 
-
-
-
-
 const userSchema = new Schema(
   {
     username: {
@@ -84,12 +80,12 @@ const userSchema = new Schema(
   { timestamps: true, versionKey: false },
 );
 
-userSchema.virtual("events", {
-  ref: "Event",
+userSchema.virtual("courses", {
+  ref: "Course",
 
   localField: "_id",
 
-  foreignField: "organizer",
+  foreignField: "instructor",
 });
 
 userSchema.set("toJSON", {
