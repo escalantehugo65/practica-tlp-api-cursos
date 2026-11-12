@@ -74,7 +74,7 @@ const CourseSchema = new Schema(
       default: "open",
     },
 
-    ClassrromSchema: {
+    classrrom: {
       type: ClassrromSchema,
       required: true,
     },
